@@ -2,3 +2,23 @@
 - name: Print the gateway for each host when defined
   ansible.builtin.debug:
     msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
+
+- name: Change user password
+  user:
+    name: "{{ansible_user}}"
+    update_password: always
+    password: "{{ new_password|password_hash('sha512') }}"
+  become: true
+
+- name: update password
+  set_fact:
+    ansible_become_password: "{{new_password}}"
+
+- name: Fix home directory ownership
+  ansible.builtin.file:
+    path: "/home/{{ansible_user}}"
+    state: directory
+    owner: "{{ansible_user}}"
+    group: "{{ansible_user}}"
+    recurse: true
+  become: true
