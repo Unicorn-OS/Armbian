@@ -1,6 +1,9 @@
 ---
-- hosts: sbc #, fedora, ubuntu
+- hosts: builder
   vars:
-
   roles:
-  - fix postinstall issues
+  - Armbian/source
+
+# - hosts: test_sbc
+#   roles:
+#   - node/fix postinstall issues

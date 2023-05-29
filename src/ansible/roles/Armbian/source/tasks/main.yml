@@ -1,0 +1,16 @@
+---
+- name: Install a list of packages
+  ansible.builtin.apt:
+    pkg:
+    - git
+  become: true
+
+
+- name: git clone source
+  ansible.builtin.git:
+    repo: 'https://github.com/armbian/build'
+    dest: "/home/{{ansible_user}}/armbian/build"
+    depth: 1
+    single_branch: yes
+    version: main
+    update: no

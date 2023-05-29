@@ -6,21 +6,12 @@ ansible_connection=local
 ansible_user=me
 ansible_become_password=u
 
-[debian]
-192.168.122.84
+[builder]
+10.0.0.144
 
-[debian:vars]
+[builder:vars]
 ansible_user=me
 ansible_become_password=u
 
-[ubuntu]
-10.0.0.143
-
-[ubuntu:vars]
-ansible_user=me
-ansible_become_password=u
-
-
-
-[sbc:children]
-ubuntu
+[test_sbc]
+10.0.0.145
