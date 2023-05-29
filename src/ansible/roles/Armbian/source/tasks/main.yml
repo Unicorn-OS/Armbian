@@ -1,5 +1,5 @@
 ---
-- name: Install a list of packages
+- name: Install build dependencies
   ansible.builtin.apt:
     pkg:
     - git
