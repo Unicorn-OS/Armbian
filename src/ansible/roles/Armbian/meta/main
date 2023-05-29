@@ -1,4 +1,4 @@
 ---
 dependencies:
-- App/install
-- App/config
+- Armbian/source
+- Armbian/bug fix

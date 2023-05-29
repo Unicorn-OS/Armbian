@@ -9,7 +9,7 @@
 - name: git clone source
   ansible.builtin.git:
     repo: 'https://github.com/armbian/build'
-    dest: "/home/{{ansible_user}}/armbian/build"
+    dest: "{{build_dir}}"
     depth: 1
     single_branch: yes
     version: main

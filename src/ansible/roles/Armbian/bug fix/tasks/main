@@ -1,0 +1,8 @@
+---
+
+# https://github.com/armbian/build/issues/5246
+
+- name: Create a cache directory to fix bug
+  ansible.builtin.file:
+    path: "{{source_dir}}/cache"
+    state: directory

@@ -2,7 +2,7 @@
 - hosts: builder
   vars:
   roles:
-  - Armbian/source
+  - Armbian
 
 # - hosts: test_sbc
 #   roles:
