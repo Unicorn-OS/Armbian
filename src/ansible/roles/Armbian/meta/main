@@ -2,3 +2,4 @@
 dependencies:
 - Armbian/source
 - Armbian/bug fix
+- Armbian/build config
