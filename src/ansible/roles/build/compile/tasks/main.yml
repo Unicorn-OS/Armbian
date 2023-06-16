@@ -13,8 +13,5 @@
   ansible.builtin.set_fact:
     build_cfg: "{{selection}} {{shallow_clone if shallow}}"    
 
-- debug:
-    msg: "{{build_cfg}}"
-
 - ansible.builtin.include_tasks:
     file: compile.yml
