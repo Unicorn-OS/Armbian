@@ -7,10 +7,10 @@ fi
 }
 
 setup_inventory(){
-echo "inventory/test" >.this/.gitignore
+echo "inventory/test" >.old/.gitignore
 
 # Copy .example to test if it doesn't exist
-cd .this/inventory/
+cd .old/inventory/
 [ ! -d "test" ] && cp -r .example test
 cd -
 }
