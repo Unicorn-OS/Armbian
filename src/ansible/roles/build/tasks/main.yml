@@ -1,0 +1,20 @@
+# Works:
+- name: Bare include (free-form)
+  ansible.builtin.include_vars: "{{item}}"
+  loop:
+  - "{{role_path}}/template/{{template}}/defaults/main.yml"
+  - "{{role_path}}/template/{{template}}/vars/main.yml"
+
+- name: Setting distro args
+  ansible.builtin.set_fact:
+    selection: "{{build_minimal_cfg if minimal else build_gnome_cfg if desktop == 'gnome' else build_kde_cfg if desktop == 'kde' else build_xfce_cfg if desktop == 'xfce '}}"
+
+- name: Setting extra args
+  ansible.builtin.set_fact:
+    build_cfg: "{{selection}} {{shallow_clone if shallow}}"    
+
+- debug:
+    msg: "{{build_cfg}}"
+
+- ansible.builtin.include_tasks:
+    file: compile.yml

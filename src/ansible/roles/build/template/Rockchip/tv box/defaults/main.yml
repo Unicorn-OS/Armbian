@@ -4,3 +4,6 @@ build_desktop: no
 build_minimal: yes
 kernel_configure: no
 release: bookworm
+
+
+a_test_var: "Foo Bar"

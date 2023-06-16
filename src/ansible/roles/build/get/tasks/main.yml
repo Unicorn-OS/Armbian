@@ -1,3 +1,0 @@
-- name: get template
-  ansible.builtin.include_role:
-    name: "build/template/{{template}}"

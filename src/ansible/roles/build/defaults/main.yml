@@ -1,0 +1,9 @@
+## Just for Testing!
+template: Rockchip/tv box
+
+# Defaults, users override
+desktop: gnome
+minimal: true
+shallow: true
+
+gnuscreen: true
