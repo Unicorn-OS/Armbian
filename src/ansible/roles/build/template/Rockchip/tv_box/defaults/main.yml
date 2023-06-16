@@ -1,0 +1,6 @@
+board: rk3318-box
+branch: current
+build_desktop: no
+build_minimal: yes
+kernel_configure: no
+release: bookworm

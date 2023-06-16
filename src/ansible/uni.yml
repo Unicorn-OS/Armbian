@@ -1,8 +1,11 @@
 ---
 - hosts: builder
   vars:
+    minimal: true
+    # desktop: gnome
   roles:
-  - Armbian
+  # - Armbian
+  - build
 
 # - hosts: test_sbc
 #   roles:

@@ -1,0 +1,4 @@
+
+selection: "{{build_minimal_cfg if minimal == 'true' else build_gnome_cfg if desktop == 'gnome' else build_kde_cfg if desktop == 'kde' else build_xfce_cfg if desktop == 'xfce '}}"
+
+build_cfg: "{{selection}} {{shallow_clone}}"

@@ -1,0 +1,4 @@
+# Always use this!
+shallow_clone="KERNEL_GIT=shallow"
+
+./compile.sh $shallow_clone

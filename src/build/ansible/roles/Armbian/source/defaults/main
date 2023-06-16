@@ -1,3 +1,0 @@
----
-
-source_dir: "/home/{{ansible_user}}/armbian/build"
