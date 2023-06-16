@@ -11,6 +11,6 @@
     repo: 'https://github.com/armbian/build'
     dest: "{{source_dir}}"
     depth: 1
-    single_branch: yes
+    # single_branch: yes  # Broken
     version: main
     update: no

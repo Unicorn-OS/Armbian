@@ -28,7 +28,7 @@ ansible -m ping test
 main(){
 dependency
 setup_inventory
-update
+#update
 #test
 }
 
