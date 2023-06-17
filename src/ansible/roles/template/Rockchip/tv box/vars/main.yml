@@ -1,5 +1,5 @@
 
-build_minimal_cfg: ./compile.sh build BOARD={{board}} BRANCH={{branch}} BUILD_DESKTOP={{build_desktop}} BUILD_MINIMAL={{build_minimal}} KERNEL_CONFIGURE={{kernel_configure}} RELEASE={{release}}
+build_minimal_cfg: build BOARD={{board}} BRANCH={{branch}} BUILD_DESKTOP={{build_desktop}} BUILD_MINIMAL={{build_minimal}} KERNEL_CONFIGURE={{kernel_configure}} RELEASE={{release}}
 
 build_gnome_cfg: do
 
