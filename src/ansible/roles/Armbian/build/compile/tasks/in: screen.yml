@@ -1,0 +1,4 @@
+- name: compile in GNU Screen
+  debug:
+    msg: "./compile.sh {{build_cfg}}"
+  when: gnuscreen

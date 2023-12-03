@@ -1,9 +1,0 @@
-- name: compile in background
-  debug:
-    msg: "./compile.sh {{build_cfg}}"
-  when: not gnuscreen
-
-- name: compile in GNU Screen
-  debug:
-    msg: "./compile.sh {{build_cfg}}"
-  when: gnuscreen

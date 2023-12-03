@@ -1,0 +1,6 @@
+- name: compile with ansible async
+  debug:
+    msg: "./compile.sh {{build_cfg}}"
+  when: not real_build
+
+# https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_async.html

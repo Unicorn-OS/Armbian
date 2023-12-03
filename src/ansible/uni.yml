@@ -3,6 +3,7 @@
   vars:
     minimal: true
     # desktop: gnome
+    real_build: false
   roles:
   - Armbian/build
 
