@@ -1,0 +1,5 @@
+dependencies:
+- Armbian/build/source
+- Armbian/build/patch
+- Armbian/build/config/kernel config
+- Armbian/build/compile
